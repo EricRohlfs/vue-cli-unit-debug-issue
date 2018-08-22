@@ -47,3 +47,4 @@ Now the debugger does not stop on the debugger statements.
 
 ## Environment
 Windows 10
+Node 8.11

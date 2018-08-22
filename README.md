@@ -1,26 +1,29 @@
-# hello1
+# Issue and Workaround
 
-## Project setup
-```
-npm install
-```
+Problem: Cannot debug unit tests when there is more than one unit test in the tests folder.
 
-### Compiles and hot-reloads for development
 ```
-npm run serve
+node --inspect-brk ./node_modules/@vue/cli-service/bin/vue-cli-service.js test:unit
 ```
 
-### Compiles and minifies for production
+# Steps to reproduce
+1. Create a new project or just clone this repo and skip to step 5
+
 ```
-npm run build
+vue create hello1
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+2. Choose manual config and add unit tests and choose Jest as the runner.
 
-### Run your unit tests
-```
-npm run test:unit
-```
+3. add debugger statement in the HelloWorld.js test file.
+
+3. Run the current test to see if it works, using the node --inspect-brk command at the top of the page.
+
+4. Add a new unit test in the tests/unit folder. (I just copied the existing test and changed a few strings)
+
+5. Run the node --inspect-brk command again
+
+Now the debugger does not stop on the debugger statements.
+
+# Environment
+Windows 10

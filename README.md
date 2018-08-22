@@ -37,11 +37,19 @@ vue create hello1
 
 3. add debugger statement in the HelloWorld.js test file.
 
-3. Run the current test to see if it works, using the node --inspect-brk command at the top of the page.
+3. Run the current test to see if it works - it should 
+
+```
+node --inspect-brk ./node_modules/@vue/cli-service/bin/vue-cli-service.js test:unit
+```
 
 4. Add a new unit test in the tests/unit folder. (I just copied the existing test and changed a few strings)
 
-5. Run the node --inspect-brk command again
+5. Run the tests again using
+
+```
+node --inspect-brk ./node_modules/@vue/cli-service/bin/vue-cli-service.js test:unit
+```
 
 Now the debugger does not stop on the debugger statements.
 

@@ -47,5 +47,9 @@ Now the debugger does not stop on the debugger statements.
 
 ## Environment
 Windows 10
+
 Node 8.11
+
 NPM 5.6
+
+vue 3.0.1

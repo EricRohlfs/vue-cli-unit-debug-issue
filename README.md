@@ -4,7 +4,7 @@ Problem: Cannot debug unit tests when there is more than one unit test in the te
 
 ## Workaround
 
-In the jest.config.js change the testMatch to point to a single test file.
+In the jest.config.js change the testMatch to point to a single test file. Since I'm usually only working on one test file at at time this isn't the end of the world, but in some cases it could be painful switching all the time.
 
 Original - that does not work
 ```
